@@ -1,0 +1,32 @@
+body{
+    background-color:pink;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(87, 13, 63);
+}
+div{
+    margin: auto;
+}
+.imagenes{
+    margin-top: 20px;
+    text-align: center;
+}
+.pulso {
+    width: 200px;  /* Puedes ajustar el tamaño de la imagen */
+    height: auto;  /* Mantén la proporción de la imagen */
+    animation: pulse 1.5s infinite; /* Llama a la animación 'pulse', duración 1.5s, se repite infinitamente */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);  /* Escala normal al principio */
+    }
+    50% {
+        transform: scale(1.1);  /* Aumenta el tamaño al 110% a mitad de la animación */
+    }
+    100% {
+        transform: scale(1);  /* Vuelve al tamaño original al final */
+    }
+}
